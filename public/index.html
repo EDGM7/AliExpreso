@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+    <meta content='never' name='referrer'/> 
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/png" href="/imagenes/logo-ico-1.png" sizes="48x48" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="...">
+
+    <title>AliExpreso</title>
+
+    <script type='text/javascript'>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollButton = document.getElementById('scroll');
+    
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    scrollButton.style.display = 'block';
+                } else {
+                    scrollButton.style.display = 'none';
+                }
+            });
+    
+            scrollButton.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+         
+        });
+    
+        window.addEventListener('load', function () {
+        // Obtener todos los formularios y restablecer sus valores
+        var forms = document.querySelectorAll('form');
+        forms.forEach(function (form) {
+            form.reset();
+        });
+    });
+
+</script>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            <b>Ali</b>Expreso
+        </h1>
+        <div class="menu-container">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="menu" id="navList">
+                <a href="#home">Home</a>
+                <a href="#store">Store</a>
+                <a href="#sells">Sells</a>
+                <a href="#contact">Contact</a>
+            </nav>
+                   
+        </div>
+    </header>   
+
+    <section id="eslogan" class="parallax-section">
+        <div class="contenedor-eslogan">
+            <h2 class="subtitulo">¡<span class="titulo"><b>Ali</b>Expreso</span> llega a tocar tu puerta!</h2>
+            <p class="texto">No pierdas la oportunidad</p>
+        </div>
+          
+    </section>
+
+    <section class="nosotros" class="parallax-section">
+        <div class="sobre-nosotros">
+            <img class="imagen-1" src="/imagenes/sobre-nosotros.jpg" alt="Cajas de AliExpreso">
+        </div>
+
+        <div class="sobre-nosotros">
+            <h2 class="subtitulo primario">¿Quiénes somos?</h2>
+            <p class="texto1 negro">AliExpreso es un portal virtual para comprar y vender productos a todo el mundo,
+                con disponibilidad
+                de envia a cualquier parte del mundo; además de ofrecer ventas al mayor y detal con grándes ofertas
+                y atención al cliente las 24 horas del día.</p>
+            <p class="texto1 negro">Todos los productos que te puedas imaginar lo tenemos, y podras vender cualquier
+                productos en
+                nuestras categorías; aunque si no existe una categoria especifíca, ¡no importa! porque tu mismo la
+                puedes crear</p>
+            
+        </div>
+    </section>
+
+    <div class="separacion"></div>
+
+    <section class="servicios" class="parallax-section">
+        <h2 class="subtitulo primario">¿Qué Ofrece AliExpreso?</h2>
+    
+        <div class="tarjetas">
+            <article class="tarjeta tarjeta-1">
+                <div class="ajuste-tarjeta">
+                    <h3 class="subtitulo-xl">Ventas</h3>
+                    <p class="texto2 centrar negro">Puedes vender cualquier producto legal dentro de AliExpreso,
+                        tecnología, electrodomésticos, ropa,
+                        accesorios, periféricos, figuras, juguetes, etc...</p>
+                </div>
+            </article>
+    
+            <article class="tarjeta tarjeta-2">
+                <div class="ajuste-tarjeta">
+                    <h3 class="subtitulo-xl">Compras</h3>
+                    <p class="texto2 centrar negro">Puedes comprar cualquier producto legal dentro de AliExpreso,
+                        tecnología, electrodomésticos,
+                        ropa, accesorios, periféricos, figuras, juguetes, etc...</p>
+                </div>
+            </article>
+    
+            <article class="tarjeta tarjeta-3">
+                <div class="ajuste-tarjeta">
+                    <h3 class="subtitulo-xl">Envíos</h3>
+                    <p class="texto2 centrar negro">AliExpreso está asociado a muchas empresas de envíos, que cubren
+                        cualquier parte del mundo,
+                        tecnología, electrodomésticos, ropa, accesorios, periféricos, figuras, juguetes, etc...</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+
+    <section class="ubicanos" class="parallax-section">
+        <div class="contenedor">
+            <h2 class="subtitulo primario">¿Tenemos tienda física?</h2>
+            <p class="texto negro">Si deseas contactarnos personalmente puedes ubicarnos en la siguiente direccion mostrada a
+                continuación:</p>
+        </div>
+
+        <div class="contenedor ubica">
+            <iframe
+            class="ubicacion"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23957.993083929443!2d2.0729412657396176!3d41.35780614077125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499e9e37ad96d%3A0x3eedbe7f1131965f!2sAliExpreso%20Store!5e0!3m2!1ses!2sve!4v1686766367448!5m2!1ses!2sve"
+            width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <section id="store" class="parallax-section">
+        <h2 class="subtitulo primario">Busqueda de Productos</h2>
+        <section class="opciones">
+            <form action="" class="buscador" id="formBusqueda">
+                <input class="campos" type="text" placeholder="Busca por nombre o categoría" value="" id="busqueda">
+                <button type="submit" class="btn tamaño-btn-normal" id="buscar">Buscar</button>
+                <button type="button" class="btn tamaño-btn-normal" id="limpiar">Limpiar</button>
+            </form>
+        </section>
+              
+    
+        <section id="resultadosTienda" class="resultados-tienda">
+            <!-- Aquí se mostrarán los resultados de la búsqueda -->
+        </section>
+
+        <div id="resultadosTienda"></div>
+    </section>
+    
+
+
+<section id="sells" class="parallax-section">
+    <section class="vender">
+        <div class="contenedor-sells">       
+
+            <form action="/guardar-producto" method="post" enctype="multipart/form-data" class="formulario-reseña" id="guardarprodu">
+      
+            <h4 class="subtitulo primario titulo-formulario">Publicar</h4>
+            <div class="control-doble">
+                <div class="controles">
+                    <label for="nombre" class="indicador">Nombre:</label>
+                    <input class="campos" required type="text" placeholder="Nombre" value="" id="nombre" name="nombre">
+                    
+                </div>
+                <div class="controles">
+                    <label for="descripcion" class="indicador">Descripcion:</label>
+                    <textarea class="campos" required name="descripcion" id="descripcion" placeholder="Breve Descripción del producto"></textarea>
+                </div>
+            </div>
+
+        <div class="control-doble">
+           <div class="controles">
+           
+                <label for="categoria" class="indicador">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" disabled selected>Categorias Favoritas</option>
+                    <option value="Audifonos">Audifonos</option>
+                    <option value="Consolas">Consolas</option>
+                    <option value="Perfumes">Perfumes</option>
+                    <option value="Reloj">Reloj</option>
+                    <option value="SmartTV">SmartTV</option>
+                    <option value="Telefonos">Telefonos</option>
+                </select>             
+            </div> 
+
+            <div class="controles">
+                <label for="stock" class="indicador">Stock:</label>
+                <input class="campos" required type="number" min="0" placeholder="Cantidad en stock..." value="" id="stock" name="stock">
+            </div>
+        </div> 
+        <div class="control-doble">
+            <div class="controles">
+                <label for="precio" class="indicador">Precio:</label>
+                <input class="campos" required type="number" min="0" placeholder="precio del producto..." value="" id="precio" name="precio">
+            </div>
+            <div class="controles">
+                <label for="moneda" class="indicador">Moneda:</label>
+                <input class="campos" required type="text" placeholder="moneda, Ej: '$'" value="" id="moneda" name="moneda">
+            </div>
+        </div>
+        <div class="controles">
+            <label for="imagen" class="indicador img">Imagen:</label>
+            <input class="campos" type="file" accept="image/*" id="imagen" name="imagen">        
+        </div>
+                <button type="submit" class="btn tamaño-btn-normal" id="publicar-producto">Publicar Producto</button>
+            </form>            
+        </div> 
+
+    </section>
+  
+
+</section>
+<section id="contact" class="contacto">    
+        <div class="media-pantalla">
+            <img class="perfil" src="/imagenes/perfil.jpeg" alt="foto del desarrollador">
+        </div>
+
+        <div class="media-pantalla">
+            <h2 class="subtitulo-xl primario">Desarrollador del Proyecto</h2>
+            <p class="texto1 negro centrar">Para obtener más información sobre el desarrollador del proyecto
+                AliExpreso, puedes contactarlo por medio de sus redes sociales:</p>
+                <div class="redes">
+                    <a href="https://twitter.com/?lang=es" class="red"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/eliasdavid.guillenmontilla?mibextid=ZbWKwL" class="red"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/EDGM7/AliExpreso/tree/main" class="red"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/eliasdavidguillen0710?igshid=NGExMmI2YTkyZg==" class="red"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+        </div>
+    
+</section>
+<section class="pie-pagina">
+    <div class="contenido-pie">
+        <div class="assets">
+            <h4 class="subtitulo primario">Tambien te puede interesar:</h4>
+            <ul class="lista-pie">
+                <li class="li"><a class="link" href="https://www.alibaba.com/?src=sem_ggl&field=UG&from=sem_ggl&cmpgn=9922923049&adgrp=97780320702&fditm=&tgt=kwd-784652173659&locintrst=&locphyscl=21205&mtchtyp=e&ntwrk=g&device=c&dvcmdl=&creative=432272609422&plcmnt=&plcmntcat=&aceid=&position=&gad=1&gclid=CjwKCAjwkLCkBhA9EiwAka9QRnkTWDVYs_mFg1bgEotq9LfO-mUfFcdb37skGkIlY9LJUhsc_a_l4RoCRsgQAvD_BwE">Alibaba</a></li>
+                <li class="li"><a class="link" href="https://www.amazon.com/-/es/">Amazon</a></li>
+                <li class="li"><a class="link" href="https://www.mercadolibre.com.ve/">MercadoLibre</a></li>
+                <li class="li"><a class="link" href="https://www.netflix.com/ve/">Netflix</a></li>
+                <li class="li"><a class="link" href="https://play.hbomax.com/">HBO MAX</a></li>
+                <li class="li"><a class="link" href="https://www.disneyplus.com/es-ve">Disney +</a></li>
+            </ul>
+        </div>
+
+        <div class="assets">
+            <form class="formulario-reseña" id="formularioComentario" action="/guardar-comentario" method="post">
+                <h4 class="subtitulo primario titulo-formulario">Envíanos un Comentario</h4>
+
+                <div class="controles">
+                    <label for="nombre" class="indicador">Nombre:</label>
+                    <input class="camposx" type="text" placeholder="Ingrese nombre" value="" id="nombre" name="nombre">
+                </div>
+                <div class="controles">
+                    <label for="comentario" class="indicador">Comentario:</label>
+                    <textarea class="camposx" name="comentario" id="comentario"
+                        placeholder="Escribe el comentario"></textarea>
+                </div>
+
+                <button type="submit" class="btn tamaño-btn-normal" id="enviar">Enviar</button>
+            </form>
+
+            
+        </div>
+    </div>
+
+    <div class="separacion"></div>
+
+    <div class="derechos">
+        <h6>Derechos Reservados para AliExpreso - Tienda virutal AliExpreso</h6>
+    </div>
+
+</section>
+
+ 
+    <script async src="/main.js"></script>    
+    <script async src="/tienda.js"></script>     
+ 
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+</body>
+</html>
